@@ -14,7 +14,8 @@ public class Intro_Java_Egg {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        //   ESTE ARCHIVO ESTÁ VACÍO ES SOLAMENTE LA CREACIÓN DE UN POYECTO JAVA
     }
     
 }
