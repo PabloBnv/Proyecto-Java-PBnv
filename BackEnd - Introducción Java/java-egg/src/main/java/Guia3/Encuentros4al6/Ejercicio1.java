@@ -1,20 +1,29 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package Guia3.Encuentros4al6;
 
+Crear un programa que dado un número determine si es par o impar.
+
+*/
+package Guia3.Encuentros4al6;
+import java.util.Scanner;
 /**
  *
- * @author ViejoHucha
+ * @author PabloBnv
  */
 public class Ejercicio1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+        Scanner leer = new Scanner(System.in);
+        int num = 0;
+        
+        System.out.print("Ingrese un numero:");
+        num = leer.nextInt();
+        
+        if (num % 2 ==0){
+            System.out.print("Es Par");
+        } else {
+            System.out.print("Es Impar");
+        }        
+    }        
 }
