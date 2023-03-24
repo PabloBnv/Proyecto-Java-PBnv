@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package Guia4.Encuentro7y8;
+package Guia3.Encuentros4al6;
 
 import java.util.Scanner;
 
@@ -10,23 +10,22 @@ import java.util.Scanner;
  *
  * @author PabloBnv
  */
-public class Ejercicio2 {
+public class Manual_Ej_08_While {
 
     /*
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         try (Scanner leer = new Scanner(System.in)) {
-            String frase;
-            System.out.print("Introduce una frase: ");
-            frase= leer.nextLine();
-            frase= frase.toUpperCase();
-            if (frase.equals("EUREKA")){
-                System.out.println("La frase es eureka");
-            }
-            else {
-                System.out.println("La frase no es eureka");
-            }
+            int respuesta = 0;
+ 	
+            System.out.println("Ingrese la nota: ");
+            respuesta = leer.nextInt();
+      
+            while ((respuesta < 0) || (respuesta >10)) {
+                System.out.println("Ingrese la nota: ");
+                respuesta = leer.nextInt();
+  	        }
         }
     }
     
