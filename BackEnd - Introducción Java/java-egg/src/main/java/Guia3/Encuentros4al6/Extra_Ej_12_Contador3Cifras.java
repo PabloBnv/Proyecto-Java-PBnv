@@ -53,13 +53,13 @@ public class Extra_Ej_12_Contador3Cifras {
                     
                     //En 1 sola sentencia se pueden resumir los condicionales
                     /*       
-                    Más fácil.            
+                         
                     System.out.print(i != 3 ? i : "E");
                     System.out.print(" ");
                     System.out.print(j != 3 ? j : "E");
                     System.out.print(" ");
-                    System.out.print(k != 3 ? k : "E");
-                    System.out.println(" ");
+                    System.out.println(k != 3 ? k : "E");
+                    
                      */
                 }
                 
