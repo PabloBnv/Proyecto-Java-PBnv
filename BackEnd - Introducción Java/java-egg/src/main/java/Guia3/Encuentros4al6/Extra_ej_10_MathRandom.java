@@ -20,6 +20,12 @@ import java.util.Scanner;
 public class Extra_ej_10_MathRandom {
     public static void main(String[] args) {
        
+        System.out.println("**************************************");
+        System.out.println("*                                    *");
+        System.out.println("*         Multiplicaciones           *");
+        System.out.println("*                                    *");
+        System.out.println("**************************************"); 
+
         try(Scanner leer=new Scanner(System.in)){
             int num1=(int)(Math.random()*(10-1));
             int num2=(int)(Math.random()*(10-1));
