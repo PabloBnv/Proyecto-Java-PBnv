@@ -32,7 +32,7 @@ public class EjerciciosPracticos_Ej_06_Calculadora {
             do {
                 System.out.println(" --- CALCULADORA --- ");
                 System.out.println(" ");
-                System.out.println("Seleccione su tipo de motor: ");
+               
                 System.out.println("************* ");
                 System.out.println("1- Sumar : ");
                 System.out.println("2- Restar : ");

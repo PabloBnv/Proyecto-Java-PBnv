@@ -1,6 +1,8 @@
 /*
  *
- * 
+ * Crea un procedimiento EsMultiplo que reciba los dos números pasados por 
+ * el usuario, validando que el primer número múltiplo del segundo e imprima
+ * si el primer número es múltiplo del segundo, sino informe que no lo son.
  * 
  */
 package Guia4.Encuentro7y8;
@@ -11,7 +13,7 @@ import java.util.Scanner;
  *
  * @author PabloBnv
  */
-public class Manual_Ej_03_Multiplo {
+public class Manual_Ej_12_Multiplo {
 
    public static void main(String[] args) {
         

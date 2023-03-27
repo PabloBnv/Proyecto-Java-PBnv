@@ -1,6 +1,9 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Crea una aplicación que le pida dos números al usuario y
+ * este pueda elegir entre sumar, restar, multiplicar y dividir.
+ * La aplicación debe tener una función para cada operación 
+ * matemática y deben devolver sus resultados para imprimirlos en el main. 
+ * 
  */
 package Guia4.Encuentro7y8;
 
@@ -10,7 +13,7 @@ import java.util.Scanner;
  *
  * @author PabloBnv
  */
-public class Manual_Ej_02_CalcuSubprogramas {
+public class EjerciciosPracticos_Ej_01_CalcuSubprogramas {
 
     /*
      * @param args the command line arguments
@@ -28,6 +31,12 @@ public class Manual_Ej_02_CalcuSubprogramas {
 
             do {
                 
+                System.out.println("**************************************");
+                System.out.println("*                                    *");
+                System.out.println("*        Calculadora SubProg         *");
+                System.out.println("*                                    *");
+                System.out.println("**************************************"); 
+        
                 System.out.println("************* ");
                 System.out.println("1- Sumar : ");
                 System.out.println("2- Restar : ");

@@ -1,6 +1,9 @@
 /*
- *
- * 
+ * Diseñe una función que pida el nombre y la edad de N personas
+ * e imprima los datos de las personas ingresadas por teclado e 
+ * indique si son mayores o menores de edad. Después de cada persona,
+ * el programa debe preguntarle al usuario si quiere seguir mostrando
+ * personas y frenar cuando el usuario ingrese la palabra “No”
  * 
  */
 package Guia4.Encuentro7y8;
@@ -11,13 +14,21 @@ import java.util.Scanner;
  *
  * @author PabloBnv
  */
-public class Manual_Ej_04_MayoriaEdad {
+public class EjerciciosPracticos_Ej_02_MayoriaEdad {
 
    public static void main(String[] args) {
         
         String clave="si", nombre="";
         int edad=0;
         try (Scanner leer = new Scanner (System.in)) {
+           
+            System.out.println("**************************************");
+            System.out.println("*                                    *");
+            System.out.println("*          Mayoría de Edad           *");
+            System.out.println("*                                    *");
+            System.out.println("**************************************"); 
+
+           
             do{
               
                 System.out.println("Ingrese nombre");
