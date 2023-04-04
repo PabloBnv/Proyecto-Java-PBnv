@@ -7,33 +7,30 @@ package libroapp;
 * el número de páginas. 
 */
 
-
 import ent.libro;
-import srv.ServicioLibro;
 
 public class LibritoApp {
-   
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
 
         System.out.println("**************************************");
         System.out.println("*                                    *");
         System.out.println("*              Librito ISBN          *");
         System.out.println("*                                    *");
         System.out.println("**************************************");
+        System.out.println("");
 
+        libro l1 = new libro();
 
-        
+        l1.crearLibro();
 
-            ServicioLibro sl = new ServicioLibro();
-
-            libro l1 = sl.crearLibro();
-
-
-            System.out.println(" "+l1+"");
-
-
-        
+        System.out.println("");
+        System.out.println("**************************************");
+        System.out.println("");
+        l1.mostrarLibro();
+        System.out.println("");
+        System.out.println("************FIN APP***************");
 
     }
+    
 }

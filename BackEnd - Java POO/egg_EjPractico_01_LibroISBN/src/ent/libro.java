@@ -1,6 +1,9 @@
 package ent;
 
+import java.util.Scanner;
 
+// Crear una clase llamada Libro que contenga los siguientes atributos: 
+// ISBN, Título, Autor, Número de páginas.
 public class libro {
 
    
@@ -8,11 +11,9 @@ public class libro {
     public String titulo;
     public String autor;
     public int numeroPag;
+    private Scanner leer = new Scanner(System.in);
 
-    public libro() {
-
-    }
-
+    //un constructor con todos los atributos pasados por parámetro 
     public libro( String iSBN, String titulo, String autor, int numeroPag) {
         
         this.ISBN = iSBN;
@@ -20,7 +21,12 @@ public class libro {
         this.autor = autor;
         this.numeroPag = numeroPag;
     }
+    // y un constructor vacío.
+    public libro() {
 
+    }
+    
+    // Get y set
     public void setISBN(String iSBN) {
         ISBN = iSBN;
     }
@@ -54,22 +60,32 @@ public class libro {
         return numeroPag;
     }
 
-   
-
-    @Override
-    public String toString() {
-        return "libro [ISBN=" + ISBN + ", titulo=" + titulo + ", autor=" + autor + ", numeroPag="
-                + numeroPag + "]";
+    //Crear un método para cargar un libro pidiendo los datos al usuario
+    public void crearLibro() {
+        System.out.print("Ingrese el numero ISBN: >");
+        this.ISBN = leer.next();
+        leer.nextLine(); // Lo uso para cerrar el Next() y no me genere salto.
+        System.out.print("Ingrese el Titulo: >");
+        this.titulo = (leer.nextLine());
+        System.out.print("Ingrese el Autor: >");
+        this.autor = (leer.nextLine());
+        System.out.print("Ingrese el número de páginas: >");
+        this.numeroPag = leer.nextInt();
+        
     }
-
    
+    // informar mediante otro método el número de ISBN, el título, el autor del libro y 
+    // el número de páginas. 
+    public void mostrarLibro(){
 
-    //public int crearLibro(){}
+        System.out.println("> Datos ingresados: Libro 1:");
+        System.out.println("El número ISBN es: " + this.ISBN);
+        System.out.println("El nombre del Autor es: " + this.autor);
+        System.out.println("El título es: " + this.titulo);
+        System.out.println("La cantudad de páginas es: " + this.numeroPag);
 
 
-
-
-    
+    }
 
 
 }

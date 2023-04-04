@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-import entidades.Circulo;
+import entidades.Circunferencia;
 /* Declarar una clase llamada Circunferencia que tenga como atributo 
 *  privado el radio de tipo real. A continuación, se deben crear los siguientes métodos:
 * -Método constructor que inicialice el radio pasado como parámetro.
@@ -11,7 +9,7 @@ import entidades.Circulo;
  */
 public class CircunApp {
     
-    private static Scanner leer = new Scanner(System.in);
+    
     public static void main(String[] args) {
 
         System.out.println("**************************************");
@@ -22,16 +20,16 @@ public class CircunApp {
         
         System.out.println("-Bienvenido al sistema de cálculo de circunferencia-");
 
-        Circulo c1 = new Circulo();
-        System.out.println("**************************************");
-        System.out.println("A continuación ingrese en radio para poder generar el cálculo.");
-        System.out.print(" >");
-        c1.crearCincurferencia(leer.nextDouble());
+        Circunferencia c1 = new Circunferencia();
+        c1.crearCincurferencia();
+        
         System.out.println("**************************************");
         System.out.println("Circulo 1:");
-        System.out.println("Diametro: "+c1.getDiametro());
-        System.out.println("Area: "+c1.getArea());
-        System.out.println("Perimetro: "+c1.getPerimetro());
-        System.out.println("**************************************");
+        System.out.println("Diametro: "+c1.diametro());
+        System.out.println("Area: "+c1.area());
+        System.out.println("Perimetro: "+c1.perimetro());
+        System.out.println("***************FIN APP****************");
+        
+
     }
 }
