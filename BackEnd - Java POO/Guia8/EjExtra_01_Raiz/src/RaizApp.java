@@ -10,9 +10,59 @@ Método obtenerRaiz(): llama a tieneRaiz() y si devolvió́ true imprime una ún
 Método calcular(): esté método llamará tieneRaices() y a tieneRaíz(), y mostrará por pantalla las posibles soluciones que tiene nuestra ecuación con los métodos obtenerRaices() o obtenerRaiz(), según lo que devuelvan nuestros métodos y en caso de no existir solución, se mostrará un mensaje.
 Nota: Fórmula ecuación 2o grado: (-b±√((b^2)-(4*a*c)))/(2*a) Solo varía el signo delante de -b */
 
+import ent.Raices;
+import srv.RaicesServicio;
 
 public class RaizApp {
     public static void main(String[] args) {
         
-    }
+        System.out.println("**************************************");
+        System.out.println("*                                    *");
+        System.out.println("*                RaicesAPP           *");
+        System.out.println("*                                    *");
+        System.out.println("**************************************");
+
+        System.out.println("    Bienvenido al portal RaicesAPP");
+
+        
+       
+        System.out.println("*****************MENU******************");
+                System.out.println("1- Crear Raiz");
+                System.out.println("2- Discriminante");
+                System.out.println("3- ¿Tiene Raices?");
+                System.out.println("4- Consultar Saldo");
+                System.out.println("5- Consultar Cuenta");
+                System.out.println("6- Salir");
+                System.out.println("**************************************");
+                System.out.print("Ingrese una opción: ");
+                opcion = leer.nextInt();
+
+                switch (opcion) {
+                    case 1:
+                        
+                        break;
+
+                    case 2:
+                        
+                        break;
+
+                    case 3:
+                        
+                        break;
+
+                    case 4:
+                        
+                        break;
+
+                    case 5:
+                        
+                        break;
+
+                    case 6:
+
+                        break;
+
+                }
+            }while(opcion!=6);
+
 }
