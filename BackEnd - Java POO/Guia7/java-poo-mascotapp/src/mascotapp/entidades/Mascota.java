@@ -1,10 +1,10 @@
 package mascotapp.entidades;
 
 public class Mascota {
-    
+
     private String nombre;
     private String apodo;
-    private String tipo; //Gato, Perro, Conejo, Loro, Carpincho
+    private String tipo; // Gato, Perro, Conejo, Loro, Carpincho
     private String color;
     private String raza;
     private int edad;
@@ -13,18 +13,14 @@ public class Mascota {
     private int energia;
 
     public Mascota() {
-        energia=1000;
+        this.energia = 1000;
     }
 
-
-    
-    public Mascota(String nombre, String apodo, String tipo) {
+   /*  public Mascota(String nombre, String apodo, String tipo) {
         this.nombre = nombre;
         this.apodo = apodo;
         this.tipo = tipo;
-    }
-
-
+    } */
 
     public Mascota(String nombre, String apodo, String tipo, String color, String raza, int edad, boolean cola) {
         this.nombre = nombre;
@@ -34,7 +30,7 @@ public class Mascota {
         this.raza = raza;
         this.edad = edad;
         this.cola = cola;
-        this.energia=1000;
+        this.energia = 1000;
     }
 
     public void setNombre(String nombre) {
@@ -94,12 +90,12 @@ public class Mascota {
     }
 
     /**
-     * Funcion pasea al perro 
+     * Funcion pasea al perro
      * 
      * @param energiaRestar
      * @return energia
      */
-    public int pasear(int energiaRestar){
+    public int pasear(int energiaRestar) {
         energia -= energiaRestar;
         return energia;
     }
@@ -111,9 +107,8 @@ public class Mascota {
      * @param vueltas
      * @return energia
      */
-    public int pasear(int energiaRestar,int vueltas){
-        
-    
+    public int pasear(int energiaRestar, int vueltas) {
+
         for (int i = 0; i < vueltas; i++) {
             energia -= energiaRestar;
         }
@@ -127,11 +122,5 @@ public class Mascota {
                 + raza + ", edad=" + edad + ", cola=" + cola + ", energia=" + energia + "]";
     }
 
-    
-
-    
-
-
-    
-    
+  
 }
