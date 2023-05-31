@@ -75,7 +75,7 @@ public class CodPostApp {
                         cs.borradoRapido(lista);
                         break;
                     case "F":
-                        cs.creadoRapido(lista);;
+                        cs.creadoRapido(lista);
                         break;
                     case "S":
                         System.out.println("Saliendo del menú...");
